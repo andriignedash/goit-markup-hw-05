@@ -591,32 +591,42 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-field-div">
-            <label class="modal-form-field-label"> Comment </label>
+          <div class="modal-form-field-div modal-form-comment-div">
+            <label class="modal-form-field-label" for="user-comment">
+              Comment
+            </label>
             <textarea
               class="modal-form-comment"
-              name="comment"
+              name="user-comment"
               placeholder="Text input"
+              id="user-comment"
             ></textarea>
           </div>
-          <label class="modal-form-checkbox-label">
-            <input
-              class="visually-hidden"
-              type="checkbox"
-              name="userAgreement"
-            />
-            <span class="modal-form-checkbox">
-              <svg class="modal-form-checkmark" width="10" height="8">
-                <use href="./images/icons.svg#checkmark"></use>
-              </svg>
-            </span>
-            <span class="modal-form-checkbox-text"
-              >I accept the terms and conditions of the
-              <a href="privacy.com" class="privacy-policy-link" target="_blank"
-                >Privacy Policy</a
-              ></span
-            >
-          </label>
+          <div class="modal-form-checkbox-div">
+            <label class="modal-form-checkbox-label">
+              <input
+                class="modal-form-checkbox-input visually-hidden"
+                type="checkbox"
+                id="user-privacy"
+                value="true"
+                name="user-privacy"
+              />
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkmark" width="10" height="8">
+                  <use href="./images/icons.svg#checkmark"></use>
+                </svg>
+              </span>
+              </label>
+              <label class="modal-form-checkbox-text" for="user-privacy"
+                >I accept the terms and conditions of the
+                <a
+                  href="privacy.com"
+                  class="privacy-policy-link"
+                  target="_blank"
+                  >Privacy Policy</a
+                ></label
+              >
+          </div>
           <button class="modal-button js-close-modal" type="submit">
             Send
           </button>

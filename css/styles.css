@@ -705,6 +705,14 @@ img {
   margin: 24px auto 0 auto;
 }
 
+.modal-button:hover {
+
+}
+
+.modal-button:focus {
+
+}
+
 .modal-button-close {
   position: absolute;
   top: 24px;
@@ -735,13 +743,20 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-close:hover,
+.modal-button-close:hover {
+  background-color: #404bbf;
+  border: none;
+}
+
 .modal-button-close:focus {
   background-color: #404bbf;
   border: none;
 }
 
-.modal-button-close:hover .modal-button-close-icon,
+.modal-button-close:hover .modal-button-close-icon {
+  fill: var(--white-background-color);
+}
+
 .modal-button-close:focus .modal-button-close-icon {
   fill: var(--white-background-color);
 }

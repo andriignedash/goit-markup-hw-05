@@ -804,7 +804,6 @@ img {
   border-color: #4D5AE5;
 }
 
-
 .modal-form-comment {
   border: 1px solid var(--modal-overlay-color);
   border-radius: 4px;
@@ -876,7 +875,7 @@ margin-bottom: 24px;
 }
 
 .modal-form-checkbox-div:has(.modal-form-checkbox-input:checked) .modal-form-checkbox {
-  background-color: var(--pressed-state-color);
+  background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
 }

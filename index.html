@@ -603,20 +603,20 @@
             ></textarea>
           </div>
           <div class="modal-form-checkbox-div">
-              <input
-                class="modal-form-checkbox-input visually-hidden"
-                type="checkbox"
-                id="user-privacy"
-                value="true"
-                name="user-privacy"
-              />
-              <label class="modal-form-checkbox-text" for="user-privacy"
-                >
-                <span class="modal-form-checkbox">
+            <input
+              class="modal-form-checkbox-input visually-hidden"
+              type="checkbox"
+              name="userAgreement"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="modal-form-checkbox-label" for="user-privacy">
+              <span class="modal-form-checkbox">
                 <svg class="modal-form-checkmark" width="10" height="8">
                   <use href="./images/icons.svg#checkmark"></use>
                 </svg>
               </span>
+              <span class="modal-form-checkbox-text">
                 I accept the terms and conditions of the
                 <a
                   href="privacy.com"
@@ -624,9 +624,10 @@
                   target="_blank"
                   >Privacy Policy</a
                 >
-                </label
-              >
+              </span>
+            </label>
           </div>
+
           <button class="modal-button js-close-modal" type="submit">
             Send
           </button>
